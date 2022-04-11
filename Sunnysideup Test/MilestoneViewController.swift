@@ -59,13 +59,6 @@ class MilestoneViewController: ViewController {
         
         return dateLabel
     }
-    
-    struct Menu {
-        var menuTitle: String?
-        var menuCookTime: String?
-        var menuCalorie: String?
-        var menuImageName: String?
-    }
 
 }
 

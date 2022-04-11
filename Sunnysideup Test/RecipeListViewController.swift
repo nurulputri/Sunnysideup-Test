@@ -8,7 +8,13 @@
 import UIKit
 
 class RecipeListViewController: ViewController {
-
+    
+    var mealArray: [Menu] = [
+        Menu(menuTitle: "Tempe Mendol", menuCookTime: "20 Mins", menuCalorie: "100 kcal", menuImageName: "tempe_mendol"),
+        Menu(menuTitle: "Salted Egg Tempe", menuCookTime: "30 Mins", menuCalorie: "150 kcal", menuImageName: "tempe_salted_egg"),
+        Menu(menuTitle: "Resep abc", menuCookTime: "30 Mins", menuCalorie: "150 kcal", menuImageName: "tempe_salted_egg")
+    ]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
