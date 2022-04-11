@@ -229,18 +229,18 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" estimatedSectionHeaderHeight="-1" sectionFooterHeight="28" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="mrG-uH-EGA">
                                 <rect key="frame" x="35" y="224" width="320" height="586"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="RecipeCell" rowHeight="200" id="eBZ-N3-Z1H" customClass="RecipeListTableViewCell" customModule="Sunnysideup_Test" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="44.666666030883789" width="320" height="200"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="RecipeCell" rowHeight="180" id="eBZ-N3-Z1H" customClass="RecipeListTableViewCell" customModule="Sunnysideup_Test" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44.666666030883789" width="320" height="180"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="eBZ-N3-Z1H" id="lh6-Qp-Que">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="180"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a2Z-dp-8un" userLabel="Container View">
-                                                    <rect key="frame" x="2" y="4" width="316" height="200"/>
+                                                    <rect key="frame" x="2" y="4" width="316" height="180"/>
                                                     <subviews>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TkF-CK-bHA" userLabel="Clipping View">
-                                                            <rect key="frame" x="0.0" y="0.0" width="316" height="200"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="316" height="180"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recipe Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oqY-Rj-Yeh">
                                                                     <rect key="frame" x="8" y="10" width="150" height="24"/>
@@ -307,7 +307,7 @@
                                                     </subviews>
                                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="200" id="239-4M-sOw"/>
+                                                        <constraint firstAttribute="height" constant="180" id="239-4M-sOw"/>
                                                         <constraint firstAttribute="trailing" secondItem="TkF-CK-bHA" secondAttribute="trailing" id="Fpn-Bc-krs"/>
                                                         <constraint firstItem="TkF-CK-bHA" firstAttribute="top" secondItem="a2Z-dp-8un" secondAttribute="top" id="nAR-Ms-Des"/>
                                                         <constraint firstItem="TkF-CK-bHA" firstAttribute="leading" secondItem="a2Z-dp-8un" secondAttribute="leading" id="nnG-N6-dtv"/>

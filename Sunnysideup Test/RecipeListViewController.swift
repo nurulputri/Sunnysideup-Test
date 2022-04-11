@@ -38,7 +38,7 @@ class RecipeListViewController: ViewController {
     
     @IBOutlet weak var AllRecipeTableView: UITableView! {
         didSet {
-            AllRecipeTableView.rowHeight = 210
+            AllRecipeTableView.rowHeight = 190
         }
     }
     
