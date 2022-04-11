@@ -28,7 +28,7 @@ class MilestoneMealTableViewCell: UITableViewCell {
     @IBOutlet weak var MilestoneImageContainerView: UIView! {
         didSet {
             MealContainerView.layer.cornerRadius = 10
-            MealContainerView.layer.shadowOpacity = 1
+            MealContainerView.layer.shadowOpacity = 0.3
             MealContainerView.layer.shadowRadius = 2
             MealContainerView.layer.shadowOffset = CGSize.zero
             MealContainerView.layer.masksToBounds = false
