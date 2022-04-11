@@ -12,6 +12,7 @@ struct Menu {
     var menuCookTime: String?
     var menuCalorie: String?
     var menuImageName: String?
+    var menuDescription: String?
 }
 
 struct OneDayMenu {

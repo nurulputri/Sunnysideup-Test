@@ -9,18 +9,18 @@ import UIKit
 
 class RecipeListViewController: ViewController {
     
-    var weeklyMenu: [OneDayMenu] = [
+    var weeklyRecipes: [OneDayMenu] = [
         OneDayMenu(dayNumber: 1,
                    dayMenuList: [
-                    Menu(menuTitle: "Tempe Mendol", menuCookTime: "20 Mins", menuCalorie: "100 kcal", menuImageName: "tempe_mendol"),
-                    Menu(menuTitle: "Salted Egg Tempe", menuCookTime: "30 Mins", menuCalorie: "150 kcal", menuImageName: "tempe_salted_egg"),
-                    Menu(menuTitle: "Resep abc", menuCookTime: "30 Mins", menuCalorie: "150 kcal", menuImageName: "tempe_salted_egg")
+                    Menu(menuTitle: "Tempe Mendol", menuCookTime: "20 Mins", menuCalorie: "100 kcal", menuImageName: "tempe_mendol", menuDescription: "Deskripsi tempe mendol apa yaaa"),
+                    Menu(menuTitle: "Salted Egg Tempe", menuCookTime: "30 Mins", menuCalorie: "150 kcal", menuImageName: "tempe_salted_egg", menuDescription: "Wow salted egg tempe, enak sekali!!"),
+                    Menu(menuTitle: "Resep abc", menuCookTime: "30 Mins", menuCalorie: "150 kcal", menuImageName: "tempe_salted_egg", menuDescription: "tempe dengan kecap ABC ulala")
                 ]),
         OneDayMenu(dayNumber: 2,
                    dayMenuList: [
-                    Menu(menuTitle: "spongebob", menuCookTime: "20 Mins", menuCalorie: "100 kcal", menuImageName: "spongebob"),
-                    Menu(menuTitle: "patrick", menuCookTime: "30 Mins", menuCalorie: "123 kcal", menuImageName: "patrick"),
-                    Menu(menuTitle: "squidward", menuCookTime: "10 Mins", menuCalorie: "111 kcal", menuImageName: "squidward")
+                    Menu(menuTitle: "spongebob", menuCookTime: "20 Mins", menuCalorie: "100 kcal", menuImageName: "spongebob", menuDescription: "spongebob tidak untuk dimakan :)"),
+                    Menu(menuTitle: "patrick", menuCookTime: "30 Mins", menuCalorie: "123 kcal", menuImageName: "patrick", menuDescription: "patrick star berbentuk bintang, dengan saus mexico"),
+                    Menu(menuTitle: "squidward", menuCookTime: "10 Mins", menuCalorie: "111 kcal", menuImageName: "squidward", menuDescription: "digoreng dan diberikan bumbu khas bikini bottom")
                 ])
     ]
     
@@ -43,4 +43,39 @@ class RecipeListViewController: ViewController {
     }
     */
 
+}
+
+extension RecipeListViewController: UITableViewDataSource {
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return weeklyRecipes.count
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return weeklyRecipes[section].dayMenuList?.count ?? 2
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = AllRecipeTableView.dequeueReusableCell(withIdentifier: "RecipeCell") as! RecipeListTableViewCell
+        
+        let recipe = weeklyRecipes[indexPath.section].dayMenuList![indexPath.row]
+
+        cell.RecipeNameLabel.text = recipe.menuTitle
+        cell.RecipeTimeCalorieLabel.text = "\(recipe.menuCookTime) | \(recipe.menuCalorie)"
+        cell.RecipeDescriptionLabel.text = recipe.menuDescription
+        cell.RecipeImageView.image = UIImage(named: recipe.menuImageName!)
+        
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return "Day \(weeklyRecipes[section].dayNumber)"
+    }
+    
+//    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+//        let view = UIView(frame: <#T##CGRect#>(x:0, y:0, width: tableView.frame.height, height: 30))
+//
+//        return view
+//    }
+    
 }

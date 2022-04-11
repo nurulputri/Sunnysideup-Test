@@ -8,7 +8,43 @@
 import UIKit
 
 class RecipeListTableViewCell: UITableViewCell {
+    @IBOutlet weak var RecipeContainerView: UIView! {
+        didSet {
+            RecipeContainerView.layer.cornerRadius = 10
+            RecipeContainerView.layer.shadowOpacity = 0.3
+            RecipeContainerView.layer.shadowRadius = 2
+            RecipeContainerView.layer.shadowOffset = CGSize(width: 1, height: 1)
+        }
+    }
+    
+    @IBOutlet weak var RecipeClippingView: UIView! {
+        didSet {
+            RecipeClippingView.layer.cornerRadius = 10
+            RecipeClippingView.layer.masksToBounds = true
+        }
+    }
+    
+    @IBOutlet weak var RecipeImageContainerView: UIView! {
+        didSet {
+            RecipeImageContainerView.layer.cornerRadius = 10
+            RecipeImageContainerView.layer.shadowOpacity = 0.8
+            RecipeImageContainerView.layer.shadowRadius = 2
+            RecipeImageContainerView.layer.shadowOffset = CGSize.zero
+            RecipeImageContainerView.layer.masksToBounds = false
+        }
+    }
 
+    @IBOutlet weak var RecipeNameLabel: UILabel!
+    @IBOutlet weak var RecipeTimeCalorieLabel: UILabel!
+    @IBOutlet weak var RecipeDescriptionLabel: UILabel!
+    @IBOutlet weak var RecipeImageView: UIImageView! {
+        didSet {
+            RecipeImageView.layer.cornerRadius = 10
+            RecipeImageView.layer.masksToBounds = true
+        }
+    }
+//    @IBOutlet weak var RecipeDetailsButton: UIButton!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
