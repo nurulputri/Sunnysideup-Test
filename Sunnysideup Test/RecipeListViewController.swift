@@ -45,6 +45,7 @@ class RecipeListViewController: ViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         AllRecipeTableView.dataSource = self
+        AllRecipeTableView.separatorStyle = .none
         AllRecipeTableView.showsVerticalScrollIndicator = false
 
         // Do any additional setup after loading the view.
