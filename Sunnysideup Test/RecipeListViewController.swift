@@ -28,6 +28,8 @@ class RecipeListViewController: ViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        AllRecipeTableView.dataSource = self
+        AllRecipeTableView.showsVerticalScrollIndicator = false
 
         // Do any additional setup after loading the view.
     }
@@ -69,7 +71,7 @@ extension RecipeListViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return "Day \(weeklyRecipes[section].dayNumber)"
+        return "Day \(String(describing: weeklyRecipes[section].dayNumber!))"
     }
     
 //    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
