@@ -34,9 +34,17 @@ class RecipeListTableViewCell: UITableViewCell {
         }
     }
 
-    @IBOutlet weak var RecipeNameLabel: UILabel!
+    @IBOutlet weak var RecipeNameLabel: UILabel! {
+        didSet {
+            RecipeNameLabel.numberOfLines = 2
+        }
+    }
     @IBOutlet weak var RecipeTimeCalorieLabel: UILabel!
-    @IBOutlet weak var RecipeDescriptionLabel: UILabel!
+    @IBOutlet weak var RecipeDescriptionLabel: UILabel! {
+        didSet {
+            RecipeDescriptionLabel.numberOfLines = 5
+        }
+    }
     @IBOutlet weak var RecipeImageView: UIImageView! {
         didSet {
             RecipeImageView.layer.cornerRadius = 10
