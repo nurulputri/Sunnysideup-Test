@@ -13,3 +13,8 @@ struct Menu {
     var menuCalorie: String?
     var menuImageName: String?
 }
+
+struct OneDayMenu {
+    var dayNumber: Int?
+    var dayMenuList: [Menu]?
+}
