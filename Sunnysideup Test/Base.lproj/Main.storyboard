@@ -291,11 +291,13 @@
                                                                         <constraint firstItem="0HI-Hg-rcR" firstAttribute="top" secondItem="KpD-dq-DEc" secondAttribute="top" id="yte-p3-kvV"/>
                                                                     </constraints>
                                                                 </view>
-                                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qmc-aN-iMJ">
-                                                                    <rect key="frame" x="169" y="141" width="159" height="31"/>
-                                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qmc-aN-iMJ">
+                                                                    <rect key="frame" x="181" y="141" width="135" height="31"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="150" id="tZO-wE-BaE"/>
+                                                                    </constraints>
                                                                     <state key="normal" title="Button"/>
-                                                                    <buttonConfiguration key="configuration" style="plain" image="arrow.right.circle" catalog="system" imagePlacement="trailing" imagePadding="7">
+                                                                    <buttonConfiguration key="configuration" style="plain" image="arrow.right.circle" catalog="system" imagePlacement="trailing" imagePadding="7" titleAlignment="trailing">
                                                                         <attributedString key="attributedTitle">
                                                                             <fragment content="see details">
                                                                                 <attributes>
@@ -313,8 +315,10 @@
                                                                 <constraint firstItem="7qu-ai-X2o" firstAttribute="leading" secondItem="TkF-CK-bHA" secondAttribute="leading" constant="8" id="7nl-Jc-AWB"/>
                                                                 <constraint firstAttribute="trailing" secondItem="KpD-dq-DEc" secondAttribute="trailing" constant="8" id="Hyg-S1-DVO"/>
                                                                 <constraint firstItem="YBi-37-amV" firstAttribute="top" secondItem="7qu-ai-X2o" secondAttribute="bottom" constant="20" id="JmQ-u7-jke"/>
+                                                                <constraint firstAttribute="bottom" secondItem="qmc-aN-iMJ" secondAttribute="bottom" constant="8" id="LmH-AW-xgz"/>
                                                                 <constraint firstItem="KpD-dq-DEc" firstAttribute="top" secondItem="TkF-CK-bHA" secondAttribute="top" constant="4" id="NQl-iH-mRV"/>
                                                                 <constraint firstItem="oqY-Rj-Yeh" firstAttribute="top" secondItem="TkF-CK-bHA" secondAttribute="top" constant="10" id="TjH-Ch-wOf"/>
+                                                                <constraint firstAttribute="trailing" secondItem="qmc-aN-iMJ" secondAttribute="trailing" id="VRJ-xp-SZj"/>
                                                                 <constraint firstItem="7qu-ai-X2o" firstAttribute="top" secondItem="oqY-Rj-Yeh" secondAttribute="bottom" constant="8" id="hwR-Xy-3oQ"/>
                                                                 <constraint firstItem="YBi-37-amV" firstAttribute="leading" secondItem="TkF-CK-bHA" secondAttribute="leading" constant="8" id="lKl-NX-ADA"/>
                                                                 <constraint firstItem="oqY-Rj-Yeh" firstAttribute="leading" secondItem="TkF-CK-bHA" secondAttribute="leading" constant="8" id="piN-Sz-ewM"/>
