@@ -51,7 +51,7 @@ class RecipeListTableViewCell: UITableViewCell {
             RecipeImageView.layer.masksToBounds = true
         }
     }
-//    @IBOutlet weak var RecipeDetailsButton: UIButton!
+    @IBOutlet weak var RecipeDetailsButton: UIButton!
     
     override func awakeFromNib() {
         super.awakeFromNib()

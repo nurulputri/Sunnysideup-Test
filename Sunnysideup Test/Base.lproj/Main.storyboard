@@ -345,6 +345,7 @@
                                             <outlet property="RecipeClippingView" destination="TkF-CK-bHA" id="Tr7-BL-fIK"/>
                                             <outlet property="RecipeContainerView" destination="a2Z-dp-8un" id="hrA-lV-euc"/>
                                             <outlet property="RecipeDescriptionLabel" destination="YBi-37-amV" id="eGa-50-Y0k"/>
+                                            <outlet property="RecipeDetailsButton" destination="qmc-aN-iMJ" id="NoC-pm-bn1"/>
                                             <outlet property="RecipeImageContainerView" destination="KpD-dq-DEc" id="zCQ-Pi-1kb"/>
                                             <outlet property="RecipeImageView" destination="0HI-Hg-rcR" id="GkM-X7-3VE"/>
                                             <outlet property="RecipeNameLabel" destination="oqY-Rj-Yeh" id="LS4-bt-0ZR"/>
